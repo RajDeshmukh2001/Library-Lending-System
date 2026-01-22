@@ -1,4 +1,3 @@
-package Library-Lending-System;
 public class Book {
     private int id;
     private String title;
