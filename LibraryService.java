@@ -13,7 +13,7 @@ public class LibraryService {
 
     public Book getBook(int bookId) {
         for (Book b : books)
-            if (b.bookId == bookId)
+            if (b.getId() == bookId)
                 return b;
         return null;
     }
@@ -27,8 +27,8 @@ public class LibraryService {
 
     public void listBooks() {
         for (Book b : books) {
-            System.out.println(b.bookId + " | " + b.title +
-                    " | Available: " + b.availableCopies);
+            System.out.println(b.getId() + " | " + b.getTitle() +
+                    " | Available: " + b.getAvailableCopies());
         }
     }
 }
